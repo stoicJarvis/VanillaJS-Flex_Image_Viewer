@@ -1,0 +1,63 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(0, 0, 0);
+}
+
+.img1{background-image: url('AMSTERDAM.jpg');}
+.img2{background-image: url('LISBON.jpg');}
+.img3{background-image: url('PARIS.jpg');}
+.img4{background-image: url('REYKJAVIK.jpg');}
+.img5{background-image: url('SANTORINI.jpg');}
+
+
+.img1 p{
+    color: rgb(246, 250, 246);
+    text-shadow:4px 4px 4px rgb(0, 0, 0);
+}
+.img2 p{
+    color: rgb(255, 0, 0);
+    text-shadow:4px 2px 4px white;
+}
+.img3 p{
+    color: rgb(231, 0, 252);
+    text-shadow:2px 2px 2px white;
+}
+.img4 p{
+    color: rgb(255, 251, 0);
+    text-shadow:4px 2px 4px white;
+}
+.img5 p{
+    color: rgb(0, 0, 0);
+    text-shadow:4px 2px 4px white;
+}
+
+.images{
+    display: flex;
+    height: 570px;
+    margin: 20px 10px;
+}
+
+.img{
+    cursor: pointer;
+    padding: 30px;
+    margin: 0px 5px;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    box-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 40px #f32121;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 
+        flex  0.7s cubic-bezier(1, -1.01, 0, 3.74),
+        font-size 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.img p:last-child{font-size: 30px;}
+
+.img.open{
+    flex: 5;
+    font-size: 35px;
+}
